@@ -1,0 +1,7 @@
+<h1>Список фильмов</h1>
+<ul>
+   {% for film in films %}
+       <li><strong>{{ film.title }}</strong>: {{ film.description }} - {{ film.review }}</li>
+   {% endfor %}
+</ul>
+<a href="{% url 'film_create' %}">Добавить новый фильм</a>
